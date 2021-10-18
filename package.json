@@ -1,0 +1,42 @@
+{
+  "name": "atomichub-autogenerate-claimlinks",
+  "version": "1.0.7",
+  "description": "Creates claim links to all or required NFTs from the AtomicHub inventory.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc && tsc-alias",
+    "dev:start": "ts-node start.ts"
+  },
+  "keywords": [
+    "wax",
+    "nft",
+    "typescript",
+    "atomichub"
+  ],
+  "author": "Vladislav Mozharov <mrkeksz@yandex.ru>",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=16.11.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.12",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.3.0",
+    "tsc-alias": "^1.3.10",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@waxio/waxjs": "^1.0.2",
+    "atomicassets": "^1.4.2",
+    "eosjs": "^22.1.0",
+    "eosjs-keygen": "^1.3.2",
+    "node-fetch": "^2.6.5"
+  }
+}
