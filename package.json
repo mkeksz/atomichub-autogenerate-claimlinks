@@ -14,7 +14,7 @@
     "atomichub"
   ],
   "author": "Vladislav Mozharov <mrkeksz@yandex.ru>",
-  "license": "ISC",
+  "license": "AGPL-3.0",
   "files": [
     "dist"
   ],
