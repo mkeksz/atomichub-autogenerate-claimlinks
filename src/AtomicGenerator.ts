@@ -58,7 +58,7 @@ export default class AtomicGenerator {
       const resultAssets = await api.getAssets(options, page, limit)
       const assetsToConcat: IAsset[] = []
       for (const asset of resultAssets) {
-        if (name && asset.name !== name) continue
+        if (name && asset.name.replace('\t','') !== name) continue
         const targetAsset = assetPages.findIndex(assetsPage => {
           let has = false
           for (const assetPage of assetsPage) {
